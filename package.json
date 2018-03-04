@@ -1,0 +1,30 @@
+{
+  "name": "cjs2",
+  "version": "1.0.0",
+  "description": "Recursive CommonJS loader plugin for RequireJS",
+  "main": "cjs2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "volo": {
+    "url": "https://raw.github.com/ghybs/cjs2/{version}/cjs2.js",
+    "dependencies": {
+      "amd-loader": "guybedford/amd-loader/0.0.2"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghybs/cjs2.git"
+  },
+  "keywords": [
+    "requirejs",
+    "amd",
+    "plugin"
+  ],
+  "author": "Boris Seang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghybs/cjs2/issues"
+  },
+  "homepage": "https://github.com/ghybs/cjs2#readme"
+}
