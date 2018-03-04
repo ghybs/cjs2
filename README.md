@@ -53,6 +53,23 @@ Supports:
 Built with the [AMD-Loader plugin helper](https://github.com/guybedford/amd-loader).
 
 
+### Use global require for sub-dependencies
+
+In some cases, we replace some sub-dependencies by modules that are not in CommonJS format.
+In such situations, we can have cjs2 plugin use the global `require` instead of recursively using `cjs2` to load those modules.
+Use the `require.config.cjs2config.globalRequire` array to list those modules:
+```javascript
+require.config({
+  cjs2config: {
+    globalRequire: [
+        'path', // List of modules (sub-dependencies) that should be loaded through global require instead of cjs2
+        'unfetch'
+    ]
+  }
+});
+```
+
+
 ## Install
 
 ```shell
