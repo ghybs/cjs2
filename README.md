@@ -1,7 +1,8 @@
 # cjs2: Recursive CommonJS Loader Plugin for RequireJS
 
 Load CommonJS modules without needing to convert them to AMD.
-Any dependency will also be loaded through cjs2, unless specified otherwise in the require configuration.
+Any dependency will also be loaded through cjs2,
+unless specified otherwise in the [require configuration](#use-global-require-for-sub-dependencies).
 
 Adapted from the  [CommonJS Loader Plugin for RequireJS (cjs)](https://github.com/guybedford/cjs).
 
@@ -20,6 +21,8 @@ require(['cjs2!my-commonjs-module'], function(mymodule) {
   // Do something
 });
 ```
+
+### How it works
 
 If your module looks like:
 
@@ -73,7 +76,7 @@ require.config({
 ## Install
 
 ```shell
-  volo add ghybs/cjs2
+volo add ghybs/cjs2
 ```
 
 If not using package management, ensure that the [AMD-Loader](https://github.com/guybedford/amd-loader) plugin is installed.
